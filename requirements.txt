@@ -1,0 +1,10 @@
+streamlit
+pandas
+scikit-learn
+plotly
+python-dotenv
+openai
+fpdf2
+kaleido
+numpy
+flask

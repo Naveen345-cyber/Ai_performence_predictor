@@ -1,0 +1,206 @@
+/* =====================================================
+   NAV-AI Pro — 3D Glassmorphism Dark Theme (Phase 2)
+   ===================================================== */
+
+/* --- GLOBAL BACKGROUND --- */
+[data-testid="stAppViewContainer"] {
+    background: #0d0d1a;
+    background-image: 
+        radial-gradient(circle at 15% 25%, rgba(106, 17, 203, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 85% 75%, rgba(37, 117, 252, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, #0d0d1a 0%, #080816 100%);
+    color: #e0e0e8;
+}
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0f0f20 0%, #0a0a18 100%);
+    border-right: 1px solid rgba(106, 17, 203, 0.2);
+}
+
+/* --- GLASSMORPHISM CARDS --- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* --- METRICS --- */
+[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 18px !important;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: scale(1.02);
+}
+
+[data-testid="stMetricValue"] {
+    color: #00d2ff !important;
+    font-weight: 800 !important;
+}
+
+[data-testid="stMetricDelta"] svg {
+    display: none;
+}
+
+/* --- 3D BUTTONS --- */
+.stButton>button {
+    width: 100%;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 50%, #00d2ff 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3), 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 8px 25px rgba(37, 117, 252, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.stButton>button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(37, 117, 252, 0.3);
+}
+
+/* --- DOWNLOAD BUTTON --- */
+.stDownloadButton>button {
+    background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%) !important;
+    box-shadow: 0 4px 15px rgba(0, 176, 155, 0.3) !important;
+}
+
+.stDownloadButton>button:hover {
+    box-shadow: 0 8px 25px rgba(0, 176, 155, 0.5) !important;
+}
+
+/* --- GAUGE & STATUS CARDS --- */
+.status-safe {
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.03));
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.status-warning {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.03));
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.status-danger {
+    background: linear-gradient(135deg, rgba(255, 68, 68, 0.1), rgba(255, 68, 68, 0.03));
+    border: 1px solid rgba(255, 68, 68, 0.3);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* --- SELECTBOX & INPUTS --- */
+.stSelectbox > div > div,
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+    color: #e0e0e8 !important;
+}
+
+/* --- SLIDER TRACK --- */
+.stSlider > div > div > div {
+    background: linear-gradient(90deg, #6a11cb, #2575fc) !important;
+}
+
+/* --- CHAT MESSAGES --- */
+.stChatMessage {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* --- TABS --- */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.2s ease;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.3), rgba(37, 117, 252, 0.3)) !important;
+    border: 1px solid rgba(37, 117, 252, 0.4) !important;
+}
+
+/* --- EXPANDER --- */
+.streamlit-expanderHeader {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --- CONSTRAIN LAYOUT WIDTH --- */
+.block-container {
+    max-width: 1100px !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* --- PROGRESS BAR CUSTOM --- */
+.stProgress > div > div > div {
+    background: linear-gradient(90deg, #6a11cb, #2575fc, #00d2ff) !important;
+    border-radius: 10px;
+}
+
+/* --- ANIMATION KEYFRAMES --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 10px rgba(0, 210, 255, 0.3); }
+    50% { box-shadow: 0 0 25px rgba(0, 210, 255, 0.6); }
+}
+
+.pulse-card {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* --- DIVIDER --- */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(106, 17, 203, 0.4), rgba(37, 117, 252, 0.4), transparent);
+    margin: 20px 0;
+}
